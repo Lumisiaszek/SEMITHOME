@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMIT HOME - Contacto</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/iconos/SemitHome.svg">
+    <meta content="Formulario para atencion médica, consultas generales, planes o unirse a nuestro staff de medicos" name="description">
+    <meta content="Formulario, equipo médico, atención online, consultas" name="keywords">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="paginas">
+
+  <!-- Navegador -->
+  <header id="header" class="encabezado">
+    <div class="encab_cont">
+      <nav id="navbar" class="navbar">
+        <a href="./index.html" class="logosemit"><img src="./assets/logos/semit_gris.png" alt="logo SEMIT HOME"></a>
+        <div class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav_links">
+          <li><a href="./index.html#descApp" target="_blank">Conocé SEMIT HOME APP</a></li>
+          <li><a href="./index.html#medicos" target="_blank">Nuestro equipo médico</a></li>
+          <li class="dropdown"><a href="#">Información útil <img src="./assets/iconos/Stroke 1.png" class="icono-flecha"></a>
+            <ul>
+              <li><a href="./nuestrosServicios.html" target="_blank">Nuestros servicios</a></li>
+              <li><a href="./mediosdepago.html" target="_blank">Medios de pago</a></li>
+              <li><a href="./sucursales.html" target="_blank">Sucursales</a></li>
+              <li><a href="./planes.html" target="_blank">Nuestros planes</a></li>
+            </ul>
+          </li>
+          <li><a href="./Contacto.html" target="_blank">Contacto</a></li>
+        </ul>
+        <div class="nav_links--rojo">
+          <ul>
+            <li class="nav_links--enlancerojo"><a href="./Contacto.html" target="_blank">Quiero trabajar con SEMIT HOME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Titulo pagina -->
+    <div class="titulopag_serv">
+      <h1>Contacto</h1>
+      <p>Envianos tu comentario y/o consulta</p>
+    </div>
+
+            
+  <!-- Formulario -->
+  <section id="form">
+    <div class="form-container">
+      <div class="form-content fade-in fade-in-short">
+        <!-- Mensajes de error y enviado -->
+        <div class="form__msj--error modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            Por favor, complete todos los campos requeridos
+          </div>
+        </div>
+        <div class="form__msj--enviado modal" style="display: none;">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            Gracias! Estaremos contactandote a la brevedad
+          </div>
+        </div>
+      <!-- Inputs -->
+      <form id="contactForm">
+        <div class="form__envio">
+          <div class="form__ingreso">
+            <p>Nombre y Apellido*</p>
+            <input class="texto" id="name" type="text" placeholder="Ingresá tu nombre y apellido">
+          </div>
+          <div class="form__ingreso">
+            <p>Email*</p>
+            <input class="correo" id="email" type="email" placeholder="Ingresá tu email">
+          </div>
+          <div class="form__ingreso">
+            <p>Teléfono*</p>
+            <input class="telefono" id="tel" type="tel" placeholder="Ingresá tu teléfono">
+          </div>
+          <div class="form__ingreso">
+            <p>Perfil*</p>
+            <select class="perfil" id="perfil">
+              <option value="" disabled selected>Seleccioná tu perfil</option>
+              <option value="paciente">Paciente</option>
+              <option value="medico">Médico</option>
+            </select>
+          </div>
+          <div class="form__ingreso comentario">
+            <p>Comentario*</p>
+            <input class="comentario" id="comentario" type="text" placeholder="Dejanos tu comentario" maxlength="200">
+            <p>(*) Campos obligatorios</p>
+          </div>
+          <div class="form_cta">
+            <button class="form__cta--enviar" type="submit">Enviar</button>
+          </div>
+        </div> 
+      </form>
+    </div>
+    <div class="contppal_img fade-in fade-in-long">
+      <img src="./assets/img/Contacto.png" alt="Contacto Medico">
+    </div>
+  </div>
+  </section>
+
+
+  <!-- FOOTER -->
+
+    <div class="footer_redes">
+      <a href="aca va link" class="footer_redes--icon"><img class="footer_redes--icon" src="./assets/iconos/instagram.svg" alt="instagram" title="instagram"/></a>
+      <a href="aca va link" class="footer_redes--icon"><img class="footer_redes--icon" src="./assets/iconos/facebook.svg" alt="facebook" title="facebook"/></a>
+      <a href="aca va link" class="footer_redes--icon"><img class="footer_redes--icon" src="./assets/iconos/envelope.svg" alt="correo" title="correo"/></a>
+      <a href="aca va link" class="footer_redes--icon"><img class="footer_redes--icon" src="./assets/iconos/whatsapp.svg" alt="whatsapp" title="whatsapp"/></a>
+    </div>
+
+    <div class="copyright_pags">
+      &copy; Copyright 2024<strong> Semit Home</strong> - Todos los derechos reservados
+      <p>Este tema fue desarrollado por:</p>
+      <a href="mailto:gis360consultoria@gmail.com">
+        <img class="logogis" src="./assets/iconos/360GIS_gris.png" alt="Gis360 Consultoria">
+      </a>
+    </div>
+
+  <script src="./scripts/scriptform.js"></script>
+  <script src="./scripts/menuhamb.js"></script>
+  <script src="./scripts/animation.js"></script>
+</body>      
