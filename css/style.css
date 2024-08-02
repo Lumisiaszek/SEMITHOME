@@ -935,7 +935,7 @@ hr {
 
 .contppal_img_cont img {
   margin-top: 1.8rem;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;  
   z-index: 1;
 }
