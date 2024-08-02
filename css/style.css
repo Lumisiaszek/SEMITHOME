@@ -643,6 +643,7 @@ footer {
   transform: scale(1.3);
 }
 
+
 .contenedorder {
   display: flex;
   justify-content: flex-end;
@@ -725,9 +726,6 @@ footer {
 }
 
 
-
-
-
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -760,8 +758,13 @@ footer {
   padding-left: 2rem;
 }
 
-.contenido_texto p {
-  margin: 1rem 0 2rem 5rem; 
+.contenido_texto_pagos {
+  margin-bottom: 1rem;
+  margin-left: 12rem;
+}
+
+.contenido_texto {
+  margin: 0;
 }
 
 .contppal {
@@ -769,7 +772,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 2.5rem;
+  margin: 2rem 10rem 4rem 10rem;
 }
 
 .contppal_textos {
@@ -777,7 +780,7 @@ footer {
   margin-right: 2rem;
 }
 
-.contppal_img {
+.contppal_img_pagos {
   flex: 1;
   margin-right: 5rem;
   display: flex;
@@ -785,9 +788,11 @@ footer {
   align-items: center;
 }
 
-.contppal_img img {
+.contppal_img_pagos img {
   max-width: 100%;
+  width: 85%;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .pago_opcion {
@@ -799,6 +804,11 @@ footer {
 
 .pago_opcion img {
   margin-right: 1rem; 
+}
+
+.pago_opcion img:hover {
+  filter: sepia(100%) hue-rotate(-50deg) saturate(5000%) brightness(0.6);
+  transform: rotate(18deg); 
 }
 
 .pago_opcion p {
@@ -823,6 +833,7 @@ hr {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
 
 .footer_redes img:hover {
   transform: scale(1.2);
@@ -855,51 +866,38 @@ hr {
 .contppal_serv {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  margin: 0 0 2.5rem 4.5rem
+  gap: 1rem;
+  margin: 0 0 5rem 10rem;
 }
+
+.contppal_izq {
+  margin-left: 2rem;
+}
+
+.contenido_texto p{
+  margin: 1rem 0 4rem 12rem; 
+}
+
 
 .serv_item {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .serv_item p {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  margin-left: 0.8rem;
-}
-
-.boton_contactoserv {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.boton_contactoserv{
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
-
-.boton_contactoserv a {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #fafafa;
-  text-decoration: none;
-  font-weight: 700;
-  background-color: var(--color-ppal);
-  padding: 0.8rem 4rem;
-  border-radius: 2rem; 
-}
-
-.boton_contactoserv a:hover {
-  transform: scale(1.1);
+  font-size: 16px;
+  margin-left: 0.2rem;
 }
 
 .contppal_img_serv img{
-  margin-right: 2.5rem;
+  margin-right: 12rem;
+}
+
+.serv_item img:hover {
+  transform: rotate(18deg); 
+  filter: sepia(100%) hue-rotate(-50deg) saturate(5000%) brightness(0.6);
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -925,24 +923,28 @@ hr {
 .form-container {
   display: flex; 
   align-items: flex-start;
-  margin-bottom: 5rem; 
+  margin: 0 15rem 5rem 15rem;
 }
 
 .form-content {
   flex: 1; 
+  position: relative;
+  z-index: 1;
+  margin-right: 6rem;
 }
 
-.contppal_img img {
+.contppal_img_cont img {
   margin-top: 1.8rem;
-  max-width: 100%;
-  height: auto; 
+  max-width: 50%;
+  height: auto;  
+  z-index: 1;
 }
 
 .form__envio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 4rem 0 2.5rem 4.5rem;
+  margin: 4rem 1rem 2.5rem 9;
 }
 
 .form__ingreso {
@@ -1081,8 +1083,8 @@ input::placeholder {
   padding: 0;
   font-family: 'Montserrat Alternates', sans-serif; 
   font-size: 2rem;
-  text-align: start;
-  margin: 3rem 2rem 0.4rem 7rem;
+  text-align: center;
+  margin: 3rem 0;
 }
 
 .contppal_suc{
@@ -1096,6 +1098,7 @@ input::placeholder {
   padding: 2.5rem 2rem;
   width: 45%; 
   margin-right: 0; 
+  margin-left: 8rem;
 }
 
 .buscador_med {
@@ -1209,14 +1212,15 @@ input:focus {
 
 .cont_googlemaps {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 7rem;
 }
 
 .contppal_contac h1 {
   padding: 0;
   font-family: 'Montserrat Alternates', sans-serif; 
   font-size: 2rem;
-  text-align: start;
-  margin: 3rem 2rem 2rem 7rem;
+  text-align: center;
+  margin: 3rem 0;
 }
 
 .cont_tel {
