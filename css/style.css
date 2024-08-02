@@ -1992,152 +1992,152 @@ input:focus {
     height: 20px;
   }
 
-   /* MEDIOS DE PAGO */
+ /* MEDIOS DE PAGO */
 
-   .contppal {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-   }
+  .contppal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 100%;
+  }
 
-   .contenido_texto_pagos {
+  .contenido_texto_pagos {
     margin: 1.5rem 2.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-   }
+  }
 
-   .contenido_texto_pagos p {
+  .contenido_texto_pagos p {
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
-   }
+  }
 
-   .contppal_textos {
-      margin: 0;
-      padding: 0;
-      margin-top: 1rem;
-   }
+  .contppal_textos {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+  }
 
-   .pago_opcion {
+  .pago_opcion {
     margin: 0;
     padding: 0.3rem;
-   }
+  }
 
-   .pago_opcion p {
-      font-size: 12px;
-      margin: 0;
-      padding: 0.5rem;
-   }
+  .pago_opcion p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0.5rem;
+  }
 
 
-   .pago_opcion img {
-      width: 25px;
-      height: auto;
-      margin: 0;
-      margin-right: 0.5rem;
-   }
+  .pago_opcion img {
+    width: 25px;
+    height: auto;
+    margin: 0;
+    margin-right: 0.5rem;
+  }
 
-   hr {
+  hr {
     display: none;
-   }
+  }
 
-   .contppal_img_pagos {
+  .contppal_img_pagos {
     margin: 0;
     width: 75%;
     height: auto;
     margin: 3.5rem 0 5.5rem 0;
-   }
+  }
 
- /* NUESTROS PLANES */   
+  /* NUESTROS PLANES */   
 
  .contppal_planes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
  }
 
  .cont_planes {
-  padding: 1rem;
-  text-align: center;
-  margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
  }
 
  .cont_planes h2 {
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 1rem;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 1rem;
  }
 
  .cont_planes p, li {
-  font-size: 12px;
-  margin: 0;
-  padding: 0.1rem;
+    font-size: 12px;
+    margin: 0;
+    padding: 0.1rem;
  }
 
  .cont_planes li {
-  font-size: 12px;
-  margin: 0;
+    font-size: 12px;
+    margin: 0;
  }
 
  .plan_action{
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
  }
 
  .plan_action a {
-  font-size: 14px;
+    font-size: 14px;
  }
 
  .plan_costo {
-  margin-top: 1.2rem;
+    margin-top: 1.2rem;
  }
 
  .costo_num {
-  font-size: 20px;
+    font-size: 20px;
  }
 
  .boton_contact {
-  margin: 1rem;
+    margin: 1rem;
  }
 
  .boton_contact a {
-  text-align: center;
-  font-size: 14px;
+    text-align: center;
+    font-size: 14px;
  }
 
 
  .cont_prox {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
  }
 
  .fondo_const {
-  position: relative;
-  width: 100%; 
-  max-width: 430px; 
-  height: auto; 
+    position: relative;
+    width: 100%; 
+    max-width: 430px; 
+    height: auto; 
   }
 
   .fondo_const img {
-  width: 100%; 
-  height: auto; 
+    width: 100%; 
+    height: auto; 
   }
 
  .cont_prox img {
-  margin: 0;
-  width: 80%;
-  height: auto;
+    margin: 0;
+    width: 80%;
+    height: auto;
  }
 
  .cont_textprox p {
-  padding: 1rem;
-  font-size: 12px;
+    padding: 1rem;
+    font-size: 12px;
  }
 
   /* CONTACTO */ 
@@ -2160,7 +2160,6 @@ input:focus {
     flex-direction: column;
     align-items: center;
     margin: 0;
-
   }
 
   .form__envio {
@@ -2224,35 +2223,20 @@ input:focus {
   }
 
   .form__ingreso select { 
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     padding-right: 3rem; 
     border: 1px solid #ccc; 
     border-radius: 0.5rem; 
     font-size: 12px; 
-    color: #333; 
+    color: #7e7d7d; 
     background-color: #fff; 
     -webkit-appearance: none; 
     -moz-appearance: none; 
     appearance: none; 
   }
 
-  .form__ingreso {
-    position: relative;
-  }
-  
-  .form__ingreso select {
-    padding-right: 2rem; 
-  }
-  
-  .form__ingreso::after {
-    content: "▼";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none; 
-  }
 
  /* SUCURSALES*/ 
 
@@ -2348,11 +2332,10 @@ input:focus {
     user-select: none;
   }
 
- .contact a {
-  color: inherit; 
-  text-decoration: none; 
+  .contact a {
+    color: inherit; 
+    text-decoration: none; 
   }
-
 
   .contact img {
     max-width: 24px; 
