@@ -1405,7 +1405,7 @@ input:focus {
 /* ------------------------------------------------------------------------------- */
 /* RESPONSIVE */
 
-/* Estilos para dispositivos de escritorio */
+/* Estilos para dispositivos*/
 @media (max-width: 667px) {
   .nav_links li.dropdown > a {
     display: none;
@@ -1417,6 +1417,8 @@ input:focus {
   .nav_links li.dropdown ul li {
     display: block;
   }
+
+
 }
 
 /* NAVEGADOR */
@@ -1929,9 +1931,14 @@ input:focus {
     gap: 0;
   }
 
+  .serv_item {
+    margin: 0;
+    margin-top: 0.8rem;
+  }
+
   .serv_item p{
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     margin-left: 0.3rem;
   }
 
@@ -1953,11 +1960,17 @@ input:focus {
     padding: 0.6rem 2rem;
   }
 
-  .contppal_img_serv img {
+  .contppal_img_serv {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .contppal_img_serv img {
+    width: 90%;
     height: auto;
-    margin-bottom: 2rem;
+    margin: 0;
   }
 
   .footer_redes--icon img {
@@ -1990,10 +2003,22 @@ input:focus {
       width: 100%;
    }
 
+   .contenido_texto_pagos {
+    margin: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .contenido_texto_pagos p {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+   }
+
    .contppal_textos {
       margin: 0;
       padding: 0;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
    }
 
    .pago_opcion {
@@ -2019,11 +2044,11 @@ input:focus {
     display: none;
    }
 
-   .contppal_img {
+   .contppal_img_pagos {
     margin: 0;
     width: 75%;
     height: auto;
-    margin-bottom: 1.5rem;
+    margin: 3.5rem 0 5.5rem 0;
    }
 
  /* NUESTROS PLANES */   
@@ -2126,6 +2151,10 @@ input:focus {
     font-size: 14px;
   }
 
+  .form-content {
+    margin: 0;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -2137,7 +2166,17 @@ input:focus {
   .form__envio {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
+  }
+
+  .form__ingreso input {
+    padding-right: 3rem;
+  }
+
+  .form__ingreso .perfil {
+    padding-right: 3rem;
   }
 
   .form__ingreso p{
@@ -2152,8 +2191,15 @@ input:focus {
     font-size: 14px;
   }
 
-  .contppal_img img {
-    width: 80%;
+  .contppal_img_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.8rem 0;
+  }
+
+  .contppal_img_cont img {
+    width: 70%;
     height: auto;
     margin: 1rem 0;
   }
@@ -2199,19 +2245,23 @@ input:focus {
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    margin: 0.5rem 2rem 0 2rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
     padding: 0.8rem;
   } 
 
   .tit_med {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .ub_med, .ub_zona {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .cont_googlemaps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
     width: 100%;
     max-width: 100%; 
     height: 100%;
